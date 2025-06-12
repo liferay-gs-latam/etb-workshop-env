@@ -1,0 +1,14 @@
+[#assign prefix = "etb"/]
+
+<h${configuration.headingLevel} class="${prefix}-section-title mb-0 color-gray-600">
+  [#if configuration.showBackButton]
+    <a href="javascript: history.back()" data-lfr-editable-id="backLink" data-lfr-editable-type="link" class="${prefix}-section-title__back"><i class="fa fa-chevron-left"></i></a>
+  [/#if]
+
+
+  <div class="${prefix}-section-title__text h2" data-lfr-editable-id="titulo" data-lfr-editable-type="text">
+    Exemplo de Título
+  </div>
+
+</h${configuration.headingLevel}>
+

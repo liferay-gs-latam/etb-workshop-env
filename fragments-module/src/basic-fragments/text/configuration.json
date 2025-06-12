@@ -1,0 +1,46 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "string",
+          "defaultValue": "size-md",
+          "label": "size",
+          "name": "textSize",
+          "type": "select",
+          "typeOptions": {
+            "validValues": [
+              {
+                "label": "extra-small",
+                "value": "size-xs"
+              },
+              {
+                "label": "small",
+                "value": "size-sm"
+              },
+              {
+                "label": "medium",
+                "value": "size-md"
+              },
+              {
+                "label": "large",
+                "value": "size-lg"
+              },
+              {
+                "label": "extra-large",
+                "value": "size-xl"
+              }
+            ]
+          }
+        },
+        {
+          "label": "text-uppercase",
+          "name": "textUppercase",
+          "type": "checkbox",
+          "defaultValue": false
+        }
+      ],
+      "label": "text-options"
+    }
+  ]
+}

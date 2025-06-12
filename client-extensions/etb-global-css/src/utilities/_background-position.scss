@@ -1,0 +1,18 @@
+.background-position{
+  &-top{
+    background-position: top;
+  }
+  &-bottom{
+    background-position: bottom;
+  }
+  &-left{
+    background-position: left;
+  }
+  &-right{
+    background-position: right;
+  }
+  &-center{
+    background-position: center;
+
+  }
+}

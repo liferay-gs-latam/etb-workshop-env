@@ -1,0 +1,30 @@
+{
+  "name": "etb-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "start": "webpack serve ",
+    "build": "webpack build",
+    "deploy": "../../gradlew :client-extensions:etb-js:deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "swiper": "^10.3.1",
+    "webpack": "^5.89.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+}

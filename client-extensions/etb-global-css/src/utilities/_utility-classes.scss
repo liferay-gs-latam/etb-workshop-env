@@ -1,0 +1,28 @@
+body {
+  &:not(.has-edit-mode-menu),
+  &:not(.is-within-iframe) {
+    .page-editor-only {
+      display: none;
+    }
+  }
+  &.has-edit-mode-menu,
+  &.is-within-iframe {
+    .page-editor-only {
+      display: block !important;
+    }
+
+    .page-editor-d-none {
+      display: none;
+    }
+
+    .page-editor-imperative-d-flex {
+      display: flex !important;
+    }
+
+    .page-editor-imperative-d-block {
+      display: block !important;
+    }
+  }
+}
+
+

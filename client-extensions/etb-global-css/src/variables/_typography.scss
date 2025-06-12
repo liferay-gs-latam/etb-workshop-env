@@ -1,0 +1,27 @@
+$headings: ('1', '2', '3', '4', '5', '6');
+$displays: ('1', '2', '3', '4');
+$mobileHeadingShrinkRatio: 0.8;
+$mobileDisplayShrinkRatio: 0.8;
+$mobileTextShrinkRatio: 0.8;
+
+
+$font-sizes: (
+  "xxs": calc(var(--font-size-sm) * 0.75),
+  "xs": calc(var(--font-size-sm) * 0.85),
+  "sm": var(--font-size-sm),
+  "md": var(--font-size-base),
+  "lg": var(--font-size-lg),
+  "xl": calc(var(--font-size-lg) * 1.12),
+  "xxl": calc(var(--font-size-lg) * 1.5),
+  "xxxl": calc(var(--font-size-lg) * 2.1),
+  "xxxxl": calc(var(--font-size-lg) * 2.8),
+);
+
+$font-size-xxs: map-get($font-sizes, "xxs");
+$font-size-xs: map-get($font-sizes, "xs");
+$font-size-sm: map-get($font-sizes, "sm");
+$font-size-md: map-get($font-sizes, "md");
+$font-size-lg: map-get($font-sizes, "lg");
+$font-size-xl: map-get($font-sizes, "xl");
+$font-size-xxl: map-get($font-sizes, "xxl");
+$font-size-xxxl: map-get($font-sizes, "xxxl");

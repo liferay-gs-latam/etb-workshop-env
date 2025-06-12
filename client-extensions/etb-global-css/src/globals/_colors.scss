@@ -1,0 +1,13 @@
+@each $colorVariable in $liferayStylebookColorVariables {
+    .color-#{$colorVariable} {
+      color: var(--#{$colorVariable})
+    }
+    .bg-#{$colorVariable} {
+        background-color: var(--#{$colorVariable})
+    }
+
+}
+
+.color-inherit {
+    color: inherit;
+}

@@ -1,0 +1,82 @@
+// h1, h2, h3, h4, h5, h6, 
+// .display-1, .display-2, .display-3, .display-4,
+// .etb-heading {
+//     font-family: var(--font-family-sans-serif);
+// }
+
+// body, .etb-text {
+//     font-family:  var(--font-family-base); 
+// }
+
+$headings-line-height: 1.2;
+$line-height: 1.5;
+
+a:not(.btn):not(.etb-badge), a:not(.btn,.etb-badge):hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Heading classes
+@each $key in $headings {
+    .h#{$key}, h#{$key} {
+        margin-bottom: 0;
+        line-height: $headings-line-height;
+        font-size: calc(var(--h#{$key}-font-size) * $mobileHeadingShrinkRatio);
+        @for $i from 1 through 6 {
+            &.h-#{$i}l {
+                height: calc((var(--h#{$key}-font-size) * $mobileHeadingShrinkRatio) * $i * $headings-line-height);
+            }
+        }
+
+        @media (min-width: $lg) {
+            font-size: var(--h#{$key}-font-size);
+            @for $i from 1 through 6 {
+                &.h-#{$i}l {
+                    height: calc(var(--h#{$key}-font-size) * $i * $headings-line-height);
+                }
+            }
+        }
+        
+    }
+}
+
+
+// Text classes
+@each $key, $value in $font-sizes {
+    $i: index(($font-sizes), ($key $value));
+
+    .text-#{($i + 1)}, .text-#{$key}, .font-size-#{$key} {
+        line-height: $line-height;
+        font-size: calc($value * $mobileTextShrinkRatio);
+        @for $i from 1 through 6 {
+            &.h-#{$i}l {
+                height: calc(($value  * $mobileHeadingShrinkRatio) * $i * $line-height);
+            }
+        }
+
+        @media (min-width: $lg) {
+            font-size: $value;
+            @for $i from 1 through 6 {
+                &.h-#{$i}l {
+                    height: calc($value * $i * $line-height);
+                }
+            }
+    
+        }
+
+    }
+
+
+}
+
+
+// Display classes
+@each $key in $displays {
+    .display-#{$key} {
+        font-size: calc(var(--display#{$key}-size) * $mobileDisplayShrinkRatio);
+        @media (min-width: $lg) {
+            font-size: var(--display#{$key}-size);
+        }
+    }
+}
+

@@ -1,0 +1,50 @@
+.btn {
+    border-radius: 0;
+}
+
+
+.btn {
+
+    padding: calc(var(--spacer-3) * 0.8) calc(var(--spacer-4) * 0.8);
+
+    &-sm {  
+        font-size: $font-size-xs;
+        padding: calc(var(--spacer-2) * 0.8) calc(var(--spacer-3) * 0.8);
+    }
+
+    &-md {
+        font-size: $font-size-sm;
+        padding: calc(var(--spacer-3) * 0.8) calc(var(--spacer-4) * 0.8);
+    }
+
+    &-lg {
+        font-size: $font-size-md;
+        padding: calc(var(--spacer-4) * 0.8) calc(var(--spacer-5) * 0.8);
+    }
+
+
+    @media (min-width: $lg) {
+        
+        padding: var(--spacer-3) var(--spacer-4);
+
+        &-sm {  
+            font-size: $font-size-sm;
+            padding: var(--spacer-2) var(--spacer-3);
+        }
+    
+        &-md {
+            font-size: $font-size-md;
+            padding: var(--spacer-3) var(--spacer-4);
+        }
+    
+        &-lg {
+            font-size: $font-size-lg;
+            padding: var(--spacer-4) var(--spacer-5);
+        }
+    
+    }
+
+}
+
+
+

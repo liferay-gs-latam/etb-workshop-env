@@ -1,0 +1,13 @@
+assemble:
+    -   from: build/static
+        into: static
+etb-custom-element:
+    friendlyURLMapping: etb-custom-element
+    htmlElementName: etb-custom-element
+    instanceable: false
+    name: ETB Custom Element
+    portletCategoryName: category.client-extensions
+    type: customElement
+    urls:
+        -   index.*.js
+    useESM: true

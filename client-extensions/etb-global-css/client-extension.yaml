@@ -1,0 +1,9 @@
+etb-global-css:
+  name: ETB - Global CSS
+  type: globalCSS
+  url: "main.bundle.css"
+assemble:
+  - from: build/assets
+    into: static
+  - from: assets
+    into: static

@@ -1,0 +1,7 @@
+etb-js:
+  name: ETB - JS
+  type: globalJS
+  url: main.bundle.js
+assemble:
+  - from: build/assets
+    into: static

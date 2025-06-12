@@ -1,0 +1,42 @@
+@import './variables';
+@import './utilities';
+	
+@import './static-vendors/swiper';
+
+@import './globals';
+@import './components';
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+// Grow content section (.etb-content-wrapper) so footer is always on the bottom
+// -       
+#main-content {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+	min-height: 100dvh;
+	font-family: var(--font-family-sans-serif);
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: "wdth" 100, "YTLC" 500;
+	font-size: x-small;
+
+}
+
+body.has-control-menu {
+	#main-content {
+		min-height: calc(100vh - var(--control-menu-height, 0px));
+		min-height: calc(100dvh - var(--control-menu-height, 0px));
+	}
+}
+
+.#{$prefix}-content-wrapper {
+	flex-grow: 1;
+	padding: 0;
+	overflow: hidden;
+}
+
+
