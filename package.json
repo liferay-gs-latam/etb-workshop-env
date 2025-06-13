@@ -1,0 +1,11 @@
+{
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "client-extensions/etb-custom-element",
+            "client-extensions/etb-global-css",
+            "client-extensions/etb-js",
+            "fragments-module"
+        ]
+    }
+}

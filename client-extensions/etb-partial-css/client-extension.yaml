@@ -2,8 +2,3 @@ etb-partial-css:
   name: ETB - Partial CSS
   type: globalCSS
   url: "main.css"
-assemble:
-  - from: build/assets
-    into: static
-  - from: assets
-    into: static
