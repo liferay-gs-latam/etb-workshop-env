@@ -2,12 +2,10 @@
   "name": "etb-fragments",
   "description": "Liferay Fragments project",
   "version": "1.0.0",
-
   "keywords": [
     "liferay",
     "liferay-fragments"
   ],
-
   "scripts": {
     "add-collection": "yo liferay-fragments:collection",
     "add-fragment": "yo liferay-fragments:fragment",
@@ -20,18 +18,16 @@
     "import:watch": "yo liferay-fragments:import --watch",
     "preview": "yo liferay-fragments:preview"
   },
-
   "engines": {
     "node": "^16.0.0",
     "yarn": "^1.22.5"
   },
-
   "dependencies": {
     "react": "16.8.6",
     "react-dom": "16.8.6"
   },
-
   "devDependencies": {
-    "generator-liferay-fragments": "2.1.1"
-  }
+    "generator-liferay-fragments": "^1.10.0"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
